@@ -1,0 +1,7 @@
+apiVersion: cache.vmware.com/v1alpha1
+kind: ProbesChecker
+metadata:
+  name: probeschecker-sample2
+spec:
+  # Add fields here
+  url: https://notification.com

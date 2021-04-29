@@ -1,0 +1,19 @@
+domain: vmware.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operador
+repo: github.com/example/probes-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: vmware.com
+  group: cache
+  kind: ProbesChecker
+  path: github.com/example/probes-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

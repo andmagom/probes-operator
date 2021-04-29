@@ -1,0 +1,20 @@
+# permissions for end users to view probescheckers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: probeschecker-viewer-role
+rules:
+- apiGroups:
+  - cache.vmware.com
+  resources:
+  - probescheckers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache.vmware.com
+  resources:
+  - probescheckers/status
+  verbs:
+  - get
